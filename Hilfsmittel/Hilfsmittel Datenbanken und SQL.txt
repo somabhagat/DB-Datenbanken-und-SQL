@@ -1,0 +1,47 @@
+1.Normalform
+Eine Relationale Datenbank erfüllt die 1. Normalform, wenn kein Attribut einer
+Tabelle existiert, dessen Informationsgehalt in eigenständige Teil-Informationen
+zerlegt werden kann.
+
+Entsprechend wird der Bearbeitungs-Prozess einer Datenbank, mit dessen Hilfe
+die 1. Normalform erreicht werden soll, auch als „Atomisierung“ bezeichnet.
+
+!!Atomatisiere alls und jede.
+
+
+
+
+2.Normalform 
+Eine Relationale Datenbank erfüllt die 2. Normalform, wenn sie zum einen die 1. NF erfüllt und
+darüber hinaus keine Tabelle besitzt, in der ein Nicht-Schlüssel-Attribut eine funktionale
+Abhängigkeit zu einer echten Teilmenge des Primärschlüssels aufweist.
+
+!!Schreibt ne ID vor.
+
+
+
+3.Normalform
+Eine Relationale Datenbank erfüllt die 3. Normalform, wenn sie zum einen die 2. NF erfüllt und
+darüber hinaus keine Tabelle besitzt, in der ein Nicht-Schlüssel-Attribut in transitiver Abhängigkeit
+zu einer echten (oder unechten) Teilmenge des Primärschlüssels steht.
+
+!!Pack alles in eine separate Tabelle,was nach Doppelung/Redundanz aussehen könnte.
+
+
+
+Referentielle Integrität 
+Wir haben nun erste Beispiele kennen gelernt, bei denen wir die Beziehung zwischen Tabellen
+berücksichtigen müssen. Aktuell gilt dies in folgenden Punkten:
+ Wir können Tabellen mit Fremdschlüsseln erst dann erstellen, wenn bereits all jene Tabellen eingeführt worden sind,
+auf die sich der (oder die) Fremdschlüssel beziehen (bzw.: „auf die sie referenzieren“).
+ Wir können eine Tabelle „T“ in einem Schema „S“ nur dann löschen, wenn es keine anderen Tabellen in S gibt, die
+sich (mittels Fremdschlüssel) auf die Tabelle T beziehen.
+• Verstöße gegen diese Punkte verletzen die „Referentielle Integrität“. Sie werden uns vom Compiler
+mittels „Fremdschlüsselüberprüfung“ aufgezeigt.
+
+
+
+
+
+
+

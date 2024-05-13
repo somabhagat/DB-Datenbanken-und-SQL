@@ -1,0 +1,32 @@
+# Musterlösung zu FPA_02_05_01_bis_03(c)
+
+
+CREATE DATABASE FPA_02_05_01_bis_03_c;
+USE FPA_02_05_01_bis_03_c;
+
+CREATE TABLE Ort
+(
+    Ort_ID INT(11) AUTO_INCREMENT,
+    Ort_Name VARCHAR(255) NOT NULL,
+    PRIMARY KEY(Ort_ID)
+);
+
+CREATE TABLE Person
+(
+    Person_ID INT(11) AUTO_INCREMENT,
+    Ort_ID INT(11) NOT NULL,
+    Vorname VARCHAR(255) NOT NULL,
+    Nachname VARCHAR(255) NOT NULL,
+    PRIMARY KEY(Person_ID),
+    FOREIGN KEY(Ort_ID) REFERENCES Ort(Ort_ID)
+);
+
+CREATE TABLE Foto
+(
+    Foto_ID INT(11) AUTO_INCREMENT,
+    Person_ID INT(11) NOT NULL,
+    Ort_ID INT(11) NOT NULL,
+    PRIMARY KEY(Foto_ID),
+    FOREIGN KEY(Person_ID) REFERENCES Person(Person_ID),
+    FOREIGN KEY(Ort_ID) REFERENCES Ort(Ort_ID)
+);

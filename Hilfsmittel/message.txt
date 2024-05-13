@@ -1,0 +1,12 @@
+Klar, stell dir vor, du hast eine riesige Spielzeugkiste und in dieser Kiste sind viele verschiedene Spielsachen durcheinandergewürfelt. Es ist schwer für dich, das Spielzeug zu finden, das du möchtest, und manchmal sind Spielzeuge kaputt, weil sie so eng beieinander liegen. Du möchtest diese Kiste besser organisieren, um schnell zu finden, was du suchst und um sicherzustellen, dass kein Spielzeug kaputt geht. Das ist so ähnlich wie bei Datenbanken: Wenn wir Daten speichern, möchten wir, dass sie gut organisiert sind. Dafür gibt es sogenannte "Normalisierungen".
+
+1. Normalform (1NF):
+Stell dir vor, in einem kleinen Fach deiner Spielzeugkiste bewahrst du mehrere kleine Autos auf. Aber anstatt jedes Auto einzeln in das Fach zu legen, hast du sie in kleinen Tüten und jede Tüte hat mehrere Autos. Das macht es schwer, ein bestimmtes Auto zu finden, nicht wahr? In der 1. Normalform sorgen wir dafür, dass jedes Auto sein eigenes Fach hat. Also, in Datenbanken sorgt diese Regel dafür, dass jede Information ihren eigenen Platz hat und nicht mehrere Dinge zusammengelegt werden.
+
+2. Normalform (2NF):
+Jetzt hast du alle deine kleinen Autos in eigenen Fächern. Aber stell dir vor, du hast einen Aufkleber auf jedem Auto, der sagt, zu welchem Spielset es gehört (z.B. "Stadt-Set" oder "Rennbahn-Set"). Manchmal hast du viele Autos aus dem gleichen Set und das bedeutet, dass du den gleichen Aufkleber auf viele Autos klebst. Das ist eine Verschwendung von Aufklebern! In der 2. Normalform nehmen wir diese Aufkleber und machen ein separates Poster an der Wand, wo jedes Set einmal aufgelistet ist und wir einfach darauf zeigen können, welches Auto zu welchem Set gehört.
+
+3. Normalform (3NF):
+Okay, jetzt schau dir das Poster an, das du an der Wand gemacht hast. Was ist, wenn auf diesem Poster nicht nur steht, zu welchem Set das Auto gehört, aber auch, aus welchem Material jedes Set gemacht ist (z.B. Plastik oder Metall)? Das Problem ist, dass du nun nicht mehr nur über die Autos sprichst, sondern auch über das Material der Sets. Wenn du zwei Sets hast, die beide aus Plastik sind, wiederholst du dich. In der 3. Normalform machen wir ein neues Poster nur für die Materialien. Jetzt haben wir ein Poster für die Autos, eins für die Sets und ein weiteres für die Materialien.
+
+Das ist, wie wir Datenbanken organisieren, damit sie sauber und einfach zu verwenden sind! Es gibt noch mehr Normalformen, aber das sind die ersten drei, und sie helfen uns, unsere Datenbank so zu gestalten, dass sie wie eine gut organisierte Spielzeugkiste ist!
